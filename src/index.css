@@ -1,13 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #24272C;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  height: max-content;
+  background-color: #232732;
+  box-shadow: inset 1px 1px 5px rgb(0 0 0 / 34%), inset 6px 8px 5px rgb(31, 30, 30), inset 1px 0px 5px rgb(255 255 255 / 82%);
+}
+
+.navbut{
+  background-color: #24272C;
+  box-shadow: -3px -3px 5px #ffffff1a;
+}
+
+.sidebutton{
+  background-color: #7733FF;
+}
+
+.image{
+  box-shadow: -7px -5px 18px 6px #ffffff1a, -7px -5px 18px 6px #ffffff1a;
+}
+
+@media only screen and (max-height: 800px){
+    .intro{
+      height: 120vh;
+    }
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #7733FF 70%, #F7A21E 30%)
+}
+
+.card{
+  background-color: #232732;
+  box-shadow: -7px -5px 18px 6px #ffffff1a, -7px -5px 18px 6px #ffffff1a;
+}
+
+@media only screen and (min-width: 394px) {
+  .projectname {
+      justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 394px) {
+  .card {
+      width: 90%;
+  }
 }
