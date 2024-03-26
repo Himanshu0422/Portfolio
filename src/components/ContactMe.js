@@ -74,7 +74,7 @@ const ContactMe = forwardRef((props, externalRef) => {
                 <a href="https://github.com/himanshu0422">
                     <i className="fa-brands fa-github text-2xl"></i>
                 </a>
-                <a href="mailTo:himanshumittal@gmail.com">
+                <a href="mailTo:himanshumittal035@gmail.com">
                     <i className="fa-solid fa-envelope text-2xl"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/himanshumittal035/">
