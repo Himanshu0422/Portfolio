@@ -22,6 +22,14 @@ body {
   background-color: #7733FF;
 }
 
+.active{
+  background-color: #7733FF;
+}
+
+.active2{
+  border: 3px solid #704abe;
+}
+
 .image{
   box-shadow: 0px 0px 9px 3px #ffffff1a, -7px -5px 18px 6px #ffffff1a;
 }

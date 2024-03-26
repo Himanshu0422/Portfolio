@@ -1,5 +1,4 @@
 import React from 'react';
-import coding from './../../assets/coding.jpeg';
 
 const Card = ({data, projectId}) => {
 
@@ -7,7 +6,7 @@ const Card = ({data, projectId}) => {
 
     return (
         <div className='card p-5 rounded-lg flex flex-col gap-2'>
-            <img src={coding} alt='coding' className='h-56 max-sm:w-[15rem] w-[16rem]' />
+            <img src={project?.image} alt='coding' className='h-56 max-sm:w-[15rem] w-[18rem]' />
             <div className='flex flex-col justify-center items-center'>
                 <div className='text-lg'>{project?.name}</div>
                 <div className='text-sm'>{project?.description}</div>
