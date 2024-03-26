@@ -19,7 +19,7 @@ const ContactMe = forwardRef((props, externalRef) => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        
+
         const formData = new FormData(form.current);
         const data = {};
         formData.forEach((value, key) => {
@@ -67,6 +67,21 @@ const ContactMe = forwardRef((props, externalRef) => {
                     </form>
                 </div>
             </div>
+            <div className='flex justify-center items-center gap-10 mt-4'>
+                <a href="https://leetcode.com/himanshu1571/">
+                    <i className="fa-solid fa-code text-2xl"></i>
+                </a>
+                <a href="https://github.com/himanshu0422">
+                    <i className="fa-brands fa-github text-2xl"></i>
+                </a>
+                <a href="mailTo:himanshumittal@gmail.com">
+                    <i className="fa-solid fa-envelope text-2xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/himanshumittal035/">
+                    <i className="fa-brands fa-linkedin text-2xl"></i>
+                </a>
+            </div>
+
         </motion.div>
     )
 });
