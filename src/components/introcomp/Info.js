@@ -9,7 +9,6 @@ const Info = ({ scrollToContact }) => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            onClick={() => scrollToContact()}
         >
             <div className='w-4/5 flex flex-col justify-center items-center gap-3'>
                 <div className='text-2xl max-sm:text-xl'>Hey</div>
@@ -29,7 +28,7 @@ const Info = ({ scrollToContact }) => {
                     >
                         Resume
                     </a>
-                    <div className='text-white w-24 h-10 flex justify-center items-center rounded-xl cursor-pointer max-md:mx-3 navbut'>
+                    <div className='text-white w-24 h-10 flex justify-center items-center rounded-xl cursor-pointer max-md:mx-3 navbut' onClick={() => scrollToContact()}>
                         Contact Me
                     </div>
                 </div>
