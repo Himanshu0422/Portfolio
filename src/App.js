@@ -15,7 +15,6 @@ function App() {
 	const scrollToSection = (ref) => {
 		ref.current.scrollIntoView({ behavior: "smooth" });
 	};
-
 	return (
 		<div>
 			<div className="gap-20 app my-8 mx-14 max-lg:mx-2 bg-gray-900 border border-black rounded-2xl flex flex-col justify-center items-center">
