@@ -13,13 +13,16 @@ const skills = [
   'Mongoose',
   'Redux',
   'TailwindCSS',
+  'React Native',
+  'Sequelize',
+  'Redis',
   'C++',
   'Java',
 ];
 
 const Skills = forwardRef((props, externalRef) => {
   const { ref: inViewRef, inView } = useInView({
-    triggerOnce: false, // Allow animation to repeat every time the component comes into view
+    triggerOnce: false,
     threshold: 0.5,
   });
 

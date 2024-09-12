@@ -10,7 +10,7 @@ const Info = ({ scrollToContact }) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
         >
-            <div className='w-4/5 flex flex-col justify-center items-center gap-3'>
+            <div className='w-4/5 flex flex-col justify-center items-center gap-3 relative top-[20px]'>
                 <div className='text-2xl max-sm:text-xl'>Hey</div>
                 <div className='flex flex-col justify-center items-center gap-2'>
                     <div className='text-5xl font-bold max-md:text-3xl max-sm:text-2xl max'>I'm Himanshu Mittal</div>

@@ -6,28 +6,28 @@ import ProjectList from './projectcomp/PeojectList';
 const mernData = [
 	{
 		"id": "0",
-		"name": "Study Notion",
-		"description": "A ed-tech project",
-		"github": "https://github.com/Himanshu0422/Study-NotionFrontend",
-		"demo": "https://study-notion-frontend-flame.vercel.app/",
-		"image": "https://res.cloudinary.com/ds6nhnm3n/image/upload/v1711476746/mdktub6wnor6a1ou8dmb.png"
+		"name": "Air Wave",
+		"description": "Flight Booing website",
+		"github": "https://github.com/Himanshu0422/Flight-Booking",
+		"demo": "https://air-wave.vercel.app/",
+		"image": "https://res.cloudinary.com/ds6nhnm3n/image/upload/v1726155775/gdgqay1wnpeqeug8gfkd.png"
 	},
 	{
 		"id": "1",
+		"name": "Edunex",
+		"description": "A ed-tech project",
+		"github": "https://github.com/Himanshu0422/EdunexFrontend",
+		"demo": "https://edunex.vercel.app/",
+		"image": "https://res.cloudinary.com/ds6nhnm3n/image/upload/v1711476746/mdktub6wnor6a1ou8dmb.png"
+	},
+	{
+		"id": "2",
 		"name": "Challenges app",
 		"description": "React Challenges app",
 		"github": "https://github.com/Himanshu0422/Challanges-App",
 		"demo": "https://challanges-app.vercel.app/",
 		"image": "https://res.cloudinary.com/ds6nhnm3n/image/upload/v1711476737/umuosndkfjaurhdlopci.png"
 	},
-	{
-		"id": "2",
-		"name": "Expense Tracker",
-		"description": "Expense management app",
-		"github": "https://github.com/Himanshu0422/Expense-TrackerApp",
-		"demo": "https://expensetracker.cyclic.app/",
-		"image": "https://res.cloudinary.com/ds6nhnm3n/image/upload/v1711476737/opbe6bhredrlhunj1yc1.png"
-	}
 ];
 
 const reactData = [

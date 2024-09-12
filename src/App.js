@@ -4,6 +4,7 @@ import ContactMe from "./components/ContactMe";
 import Intro from "./components/Intro";
 import Project from "./components/Project";
 import Skills from "./components/Skills";
+import Experience from "./components/Experience";
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
 				/>
 				<About ref={aboutRef} />
 				<Skills ref={skillsRef} />
+				<Experience />
 				<Project ref={projectRef} />
 				<ContactMe ref={contactRef} />
 			</div>
