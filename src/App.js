@@ -5,6 +5,7 @@ import Intro from "./components/Intro";
 import Project from "./components/Project";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
+import { Toaster } from "react-hot-toast";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
 	};
 	return (
 		<div>
+			<Toaster position="top-center" reverseOrder={false} />
 			<div className="gap-20 app my-8 mx-14 max-lg:mx-2 bg-gray-900 border border-black rounded-2xl flex flex-col justify-center items-center">
 				<Intro
 					scrollToAbout={() => scrollToSection(aboutRef)}

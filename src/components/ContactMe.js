@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import coding from './../assets/coding.jpeg';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { toast } from 'react-hot-toast';
 
 const ContactMe = forwardRef((props, externalRef) => {
     const form = useRef();
@@ -25,15 +26,17 @@ const ContactMe = forwardRef((props, externalRef) => {
         formData.forEach((value, key) => {
             data[key] = value;
         });
+        form.current.reset();
 
         emailjs
             .send('service_68pzrcv', 'template_ce75tp7', data, 'hNBZbW44Wr4i6nFsW')
             .then(
                 () => {
+                    toast.success('Thanks for reaching out! I\'ll get back to you soon.');
                     console.log('SUCCESS!');
-                    form.current.reset();
                 },
                 (error) => {
+                    toast.error('Oops! Something went wrong. Please try again later.')
                     console.log('FAILED...', error.text);
                 },
             );
