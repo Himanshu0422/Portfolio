@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion'; // Import motion from Framer Motion
+import { motion } from 'framer-motion';
 import Navbut from './Navbut';
 
 const Navbar = ({ scrollToAbout, scrollToProject, scrollToSkills, scrollToContact }) => {
@@ -7,19 +7,19 @@ const Navbar = ({ scrollToAbout, scrollToProject, scrollToSkills, scrollToContac
   const data = [
     {
       "name": "Contact",
-      "scrollFunction": scrollToContact // Pass down the scroll function for Contact
+      "scrollFunction": scrollToContact
     },
     {
       "name": "Skills",
-      "scrollFunction": scrollToSkills // Pass down the scroll function for Skills
+      "scrollFunction": scrollToSkills
     },
     {
       "name": "About",
-      "scrollFunction": scrollToAbout // Pass down the scroll function for About
+      "scrollFunction": scrollToAbout
     },
     {
       "name": "Projects",
-      "scrollFunction": scrollToProject // Pass down the scroll function for Projects
+      "scrollFunction": scrollToProject
     }
   ]
 
@@ -28,10 +28,10 @@ const Navbar = ({ scrollToAbout, scrollToProject, scrollToSkills, scrollToContac
       {data.map((i, index) => (
         <motion.div
           key={index}
-          whileHover={{ scale: 1.1 }} // Example animation on hover, you can customize this
-          whileTap={{ scale: 0.9 }} // Example animation on tap, you can customize this
-          transition={{ duration: 0.2 }} // Example transition duration
-          onClick={i.scrollFunction} // Call the corresponding scroll function when clicked
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ duration: 0.2 }}
+          onClick={i.scrollFunction}
         >
           <Navbut name={i.name} />
         </motion.div>
